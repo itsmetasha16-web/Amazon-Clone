@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckOut</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="mystyles/generalsection.css">
+    <link rel="stylesheet" href="mystyles/CheckoutHeader.css">
+    <link rel="stylesheet" href="mystyles/Checkout.css">
+</head>
+<body>
+    <div class="checkout-header">
+       <div class="header-content">
+         <div class="checkout-left-section-header">
+            <a href="myamazon.html">
+                <img class="amazon-logo" src="images/amazon-logo-white.png">
+                <img class="amazon-mobile-logo" src="images/amazon-mobile-logo.png">
+            </a>
+         </div>
+
+         <div class="checkout-middle-section-header">
+            Checkout(<a class="returnToHomeLink" 
+            href="myamazon.html">3 items</a>)
+         </div>
+
+         <div class="checkout-right-section-header">
+            <img src="images/myicons/checkout-lock-icon.png">
+         </div>
+       </div>
+    </div>
+
+   <div class="main">
+      <div class="PageTitle">REVIEW YOUR ORDER</div>
+      <div class="checkout-grid">
+        <div class="order-summary js-order-summary">
+        </div>
+        
+
+        <div class="Payment-summary js-payment-summary">
+        </div>
+      </div>
+   </div>
+          
+         <!--this script tag will get all of the code from the page having this url and will load it into our project like a normal code-->
+         
+         <script type="module" src="scripts/checkout.js"></script>        
+</body>
+</html>

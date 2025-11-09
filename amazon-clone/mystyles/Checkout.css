@@ -1,0 +1,174 @@
+.main{
+    max-width:1100px;
+    padding-left:30px;
+    padding-right:30px;
+   /* Adds 30px space inside the box from the left and right.*/
+    margin-top:140px;
+    margin-bottom:100px;
+    /*Adds space outside the box*/
+    margin-left:auto;
+    margin-right: auto;
+    /*auto margins (left + right): Center the box on the screen.*/
+}
+
+.PageTitle{
+    font-weight:700;
+    font-size:22px;
+    margin-bottom:18px;
+}
+.checkout-grid{
+    display:grid;
+    grid-template-columns:1fr 350px;
+    /*The first column will take up all remaining space.
+     The second column will always be 350px wide, no matter the screen size.*/
+     column-gap:12px;
+     align-items:start;
+}
+@media(max-width:1000px){
+    .main{
+        max-width:500px;
+    }
+    .checkout-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.cart-item-container,
+.Payment-summary{
+  border:1px solid rgb(222,222,222); 
+  border-radius:4px;
+  padding:18px;
+}
+.cart-item-container{
+    margin-bottom:12px;
+}
+.Payment-summary{
+    padding-bottom:5px;
+}
+@media(max-width:1000px){
+    .Payment-summary{
+        grid-row:1;
+        margin-bottom:12px;
+    }
+}
+.Delivery-Date{
+    color:rgb(0,118,0);
+    font-weight:700;
+    font-size:19px;
+    margin-top:10px;
+    margin-bottom:22px;
+}
+.Cart-Item-Details-Grid{
+    display:grid;
+    grid-template-columns: 100px 1fr 1fr;
+    column-gap:25px;
+}
+@media (max-width: 1000px) {
+  .Cart-Item-Details-Grid {
+    grid-template-columns: 100px 1fr;
+    row-gap: 30px;
+  }
+}
+.product-image{
+    max-width:100%;
+    max-height:120px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.product-name{
+   font-weight:700;
+   margin-bottom:8px;
+}
+.product-price{
+    color:rgb(177,39,4);
+    font-weight:700;
+    margin-bottom:5px;
+}
+.product-quantity .link-primary{
+    margin-left:3px; /*this will apply css style on span tags written in html file*/
+}
+@media(max-width:1000px){
+    .Delivery-Options{
+        grid-column:1/span2;
+    }
+}
+.Delivery-options-title{
+    font-weight:700;
+    margin-bottom:10px;
+}
+.Delivery-Option{
+   display:grid;
+   grid-template-columns:24px 1fr;
+   margin-bottom:12px;
+   cursor:pointer;
+}
+.delivery-option-input{
+    margin-left:0px;
+    cursor:pointer;
+}
+.delivery-option-date{
+    color:rgb(0,118,0);
+    font-weight:500;
+    margin-bottom:3px;
+}
+.delivery-option-price{
+    color:rgb(120,120,120);
+    font-size:15px;
+    white-space:nowrap;
+    display:inline-block;
+}
+
+.Payment-summary-title{
+    font-weight:700;
+    font-size:18px;
+    margin-bottom:12px;
+}
+.payment-summary-row{
+    display:grid;
+    grid-template-columns:1fr auto;
+   /* Defines two columns inside the grid:
+   1fr: First column takes up remaining available space.
+   auto: Second column takes up only as much space as its content needs.*/
+    font-size:15px;
+    margin-bottom:9px;
+}
+.payment-summary-of-money{
+    text-align:right;
+}
+.subtotal-row .payment-summary-of-money{
+    border-top:1px solid rgb(222,222,222);
+}
+.subtotal-row div{
+    padding-top:9px;
+}
+
+/*.subtotal-row div: This targets all <div> elements that are inside an element with class subtotal-row (directly or indirectly).
+
+padding-top: 9px;: It adds 9 pixels of space inside the top of each of those <div> elements, pushing their content downwards by 9px.*/
+.total-row{
+    color:rgb(177,39,10);
+    font-weight:800;
+    font-size:18px;
+    border-top:1px solid rgb(222,222,222);
+    padding-top:18px;
+}
+.button-for-placing-order{
+    width:100%;
+    padding-top:18px;
+    padding-bottom:18px;
+    border-radius:10px;
+    margin-top:11px;
+    margin-bottom:15px;
+}
+.link-primary{
+    color:rgb(111, 111, 216);
+    cursor:pointer;
+}
+.link-primary:hover{
+    color:orange;
+}
+
+
+
+
+

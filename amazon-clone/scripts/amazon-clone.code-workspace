@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../javascript-amazon-project"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "amazon-clone"
+	}
+}

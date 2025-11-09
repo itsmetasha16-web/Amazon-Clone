@@ -1,0 +1,87 @@
+.checkout-header{
+    height:60px;
+    padding-left:30px;
+    padding-right:30px;
+    background-color:white;
+    display:flex;
+    justify-content:center;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1000;
+
+}/*.checkout-header is the parent and .header-content is the child inside it */
+.header-content{
+    width:100%;
+    max-width:1100px;
+    display:flex;
+    align-items:center;
+}/* width:100%:It will take full width of its parent (.checkout-header).*/
+.checkout-left-section-header{
+    width:150px;
+}
+.amazon-logo{
+    width: 100px;
+    margin-top:5px;
+    object-fit:contain;
+}
+
+.amazon-mobile-logo{
+     display:none;
+}
+/*For screens up to 575px wide*/
+@media(max-width:575px){
+    .checkout-left-section-header{
+        width:auto;
+    }
+    .amazon-logo{
+        display:none;
+    }
+    .amazon-mobile-logo{
+        display:inline-block;
+        height:35px;
+        margin-top:5px;
+    }
+}
+.checkout-middle-section-header{
+    flex:1;
+    flex-shrink:0;
+    text-align:cenetr;
+    font-size:30px;
+    font-weight:550;
+    display:flex;
+    justify-content:center;
+}
+.returnToHomeLink{
+    cursor:pointer;
+    color:rgb(60, 145, 243);
+    font-size:25px;
+    text-decoration:none;
+}
+@media(max-width:1000px){
+  .checkout-middle-section-header{
+    font-size:20px;
+    margin-right:60px;
+  }
+  .returnToHomeLink{
+    font-size:18px;
+  }
+}
+@media(max-width:575px){
+    .checkout-middle-section-header{
+        margin-right:5px;
+    }
+}
+/* it inherits from the previous (max-width:1000px) →  font-size: 20px*/
+
+.checkout-right-section-header{
+    text-align:right;
+    width:160px;
+}
+@media(max-width:1000px){
+    .checkout-right-section-header{
+        width:auto;
+    }
+}
+
